@@ -70,8 +70,6 @@ body, html {
 }
 
 
-
-
 /*herosec*/
 .topcategories{
     color: rgb(162, 120, 36);
@@ -80,13 +78,31 @@ body, html {
     padding-bottom: 30px;
 }
 
+.topimage{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.topdesc #caps{
+    text-align: start;
+    font-size: 18px;
+}
+
+.topdesc #caps:hover{
+    color: burlywood;
+    cursor: pointer;
+}
 .topimage img{
     width: 150px;
     height: 180px;
     padding-right: 40px;
     padding-top: 30px;
 
+}
 
+.topimage .topdesc{
+    display: ;
 }
 .herosec {
     background-image: url("banner.png");
