@@ -3,9 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NoteNexon-Cart</title>
+    <title>NoteNexon > Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <header>
+        <a id="top"></a>
+        <section id="header">
+            <a href="#"><img src="NoteNexon.png" alt=""></a>
     
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="brands.html">Store</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <div class="herosec">
+        <div class="heromssg">
+            <strong id="bold"># Cart</strong> <br>To Home
+        </div>
+    </div>
+
+    <section id="cart" class="section p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>REMOVE</td>
+                    <td>IMAGE</td>
+                    <td>PRODUCT</td>
+                    <td>PRICE</td>
+                    <td>QUANTITY</td>
+                    <td>SUBTOTAL</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                    <td><img src="boximg/boximg2.png" alt=""></td>
+                    <td>Yamaha F310 Dreadnought Acoustic Guitar</td>
+                    <td>Rs. 9,441</td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs. 9,441</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-trash" aria-hidden="true"></i></i></td>
+                    <td><img src="boximg/boximg7.png" alt=""></td>
+                    <td>Pacific Drums And Percussion & Piece</td>
+                    <td> <strike>Rs. 150,149</strike> Rs. 137,990</td>
+                    <td><input type="number" value="1"></td>
+                    <td> Rs. 137,990</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-trash" aria-hidden="true"></i></i></td>
+                    <td><img src="boximg/boximg4.png" alt=""></td>
+                    <td>Vault EA20 guitar kit</td>
+                    <td>Rs. 11,756</td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs. 11,756</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cartItems" class="section p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Coupon code">
+                <button class="btn">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Total Purchase</h3>
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>Rs. 159,187</td>
+                </tr>
+
+                <tr>
+                    <td>Delivery Fee</td>
+                    <td>0</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>Rs. 159,187</strong></td>
+                </tr>
+
+            </table>
+            <button class="btn">Checkout</button>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footpanel1">
+            <a href="#top">Back to top</a>
+        </div>
+
+        <div class="footpanel2">
+            <ul>
+                <p>Call for the best deals!</p>
+                <div class="footpanelborder">
+                    <p>Call our Sales Expert.</p>
+                    <i class="fa-solid fa-phone"> +977 8734562054</i>
+                </div>
+                <p>Experience NoteNexon App on mobile</p>
+                <div class="logoplaystore">
+                    <img src="googleplay.png" alt="unexpected image error">
+                    <img src="applestore.png" alt="unexpected image error">
+                </div>
+            </ul>
+            <ul>
+                <p>Store Information</p>
+               
+                <a href="returnpolicy">15 Day Return Policy</a>
+                <a href="About.html">About Us</a>
+                <a href="terms">Terms of use</a>
+                <a href="service">Service Centre</a>
+                <a href="rewards">NoteNexon Rewards Program</a> 
+                <a href="Store">NoteNexon Music Store</a>
+                <a href="policy">Privacy Policy</a>
+
+            </ul>
+            <ul>
+                <p>Services - Support</p>
+                <a href="Order Lookup">Order Lookup</a>
+                <a href="Manufacturers">View all Manufacturers</a>
+                <a href="Contact.html">Contact Us</a>
+                <a href="FAQs">Frequently Asked Questions</a>
+                <a href="Warranty">Standard and Premium Warranty Plans</a>
+                <a href="Payment">NoteNexon Payment Options</a>
+            </ul>
+            <ul>
+                <p>Secure Checkout</p>
+                <p>We use encrypted SSl security to ensure that your credit card information is 100% protected.</p>
+
+            </ul>
+        </div>
+
+        <div class="footpanel3">
+            <div class="logo">
+                
+            </div>
+        </div>
+
+        <div class="footpanel4">
+            <div class="pages">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>Your Ads Privacy Choices</a>
+            </div>
+            <div class="copyright">
+                &copy 1996-2024, NoteNexon, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

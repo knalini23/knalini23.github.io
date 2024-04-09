@@ -16,9 +16,9 @@
             <div>
                 <ul id="navbar">
                     <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="brands.html">Store</a></li>
                     <li><a href="Services.html">Services</a></li>
-                    <li><a href="contact.html">Support</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
     
@@ -26,15 +26,32 @@
             </div>
         </section>
 
-    <div class="herosec">
-        <div class="heromssg">
-            <p>Level Up your music with NoteNexon. Shop with exciting offers every season and monthly deals only on NoteNexon...</p>
+    <div class="herobody">
+        <div class="container">
+            <div class="slider-wrapper">
+                <button id="prev-slide" class= " slide-button fa fa-chevron-left" ></button>
+                <div class="herosec">
+                    <img src="banners/banner.png" alt="banner1" class="imageItem">
+                    <img src="banners/banner2.jpg" alt="banner2" class="imageItem">
+                    <img src="banners/banner3.jpeg" alt="banner3" class="imageItem">
+                    <img src="banners/banner4.jpeg" alt="banner4" class="imageItem">
+                </div>
+                <button id="next-slide" class= " slide-button fa fa-chevron-right" ></button>
+            </div>
+        
+            <div class="slider-scrollbar">
+                <div class="scrollbarTrack">
+                    <div class="scrollbar-thumb">
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
+
     <div class="topcategories">
         <h1>Top Categories</h1>
-        <div class="topimage">
+        <div class="topimage" onclick="window.location.href= 'brands.html';">
             <div class="topdesc">
                 <img src="topcat/acous-400x400_250x.png" alt="">
                 <div id="caps">Acoustic Guitars</div>
@@ -76,7 +93,7 @@
 
     <section id="Product1" class="section-p1">
         <h1>Best Sellers</h1>
-        <div class="procontainer">
+        <div class="procontainer" onclick="window.location.href='brands.html';">
             <div class="pro"> 
                 <img src="boximg/boximg1.png" alt="">
                 <div class="description">
@@ -172,7 +189,7 @@
 
     <div class="hotdeals">
         <h1>Hot Deals</h1>
-        <div class="hotcont">
+        <div class="hotcont" onclick="window.location.href='brands.html';">
             <div class="hotdimg"> 
                 <img src="hotdeals/hotdeals1.png" alt="">
                 <div class="desc">

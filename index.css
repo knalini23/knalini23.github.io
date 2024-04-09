@@ -71,6 +71,122 @@ body, html {
 
 
 /*herosec*/
+.slider-wrapper .herosec{
+    display: grid;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.herobody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 1250px;
+    width: 95%;
+}
+
+.slider-wrapper{
+    position: relative;
+}
+
+.slider-wrapper .slide-button{
+    position:absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    background: #000;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+
+.slider-wrapper .slide-button #prev-slide{
+    left: -15px;
+
+}
+
+.slider-wrapper .slide-button#next-slide{
+    right: -20px;
+}
+
+.slider-wrapper .slide-button:hover{
+    background: #444343;
+}
+
+.slider-wrapper .herosec ::-webkit-scrollbar{
+    display: none;
+}
+
+.container .slider-scrollbar{
+    height: 24px;
+    width: 100%;
+    
+}
+
+.slider-scrollbar .scrollbarTrack{
+    height: 2px;
+    width: 100%;
+    background: #615d5d;
+    position: relative;
+    border-radius: 4px;
+}
+
+.slider-scrollbar:hover .scrollbarTrack{
+    height: 4px;
+
+}
+
+.slider-scrollbar .scrollbar-thumb{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff;
+    border-radius: inherit;
+    cursor: grab;
+}
+
+.slider-scrollbar .scrollbar-thumb:active{
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+
+.slider-scrollbar .scrollbar-thumb::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+
+
+.slider-wrapper .herosec .imageItem{
+    background-size: cover;
+    height: 450px;
+    width: 1220px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background-position: top 25% right 0;
+    padding: 0 6px;
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-end; */
+}
+
+
+/*top categories section*/
 .topcategories{
     color: rgb(162, 120, 36);
     text-align: center;
@@ -99,33 +215,6 @@ body, html {
     padding-right: 40px;
     padding-top: 30px;
 
-}
-
-.herosec {
-    background-image: url("banner.png");
-    background-size: cover;
-    height: 450px;
-    width: 1250px;
-    background-position: top 25% right 0;
-    padding: 0 6px;
-    /* display: flex;
-    justify-content: center;
-    align-items: flex-end; */
-}
-
-.heromssg {
-    background-color: rgb(187, 187, 187);
-    color: black;
-    height: 40px;
-    position: relative;
-    top: 410px;
-    left: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.87rem;
-    width: 93%;
-    margin-bottom: 25px;
 }
 
 

@@ -68,16 +68,6 @@ body, html {
     left: 20px;
 }
 
-#cart{
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50px;
-    color: burlywood;
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
-}
 
 .topnav{
     padding-top: 30px;
@@ -88,6 +78,7 @@ body, html {
     text-decoration: none;
     font-size: 20px;
     font-weight: 600px;
+    margin-left: 30px;
     color: darkgoldenrod;
     transition: 0.3sec ease;
 }
@@ -100,7 +91,7 @@ body, html {
     color: rgb(237, 220, 147);
 }
 
-.topnav a.active1::after, .topnav a:hover::after{
+/* .topnav a.active1::after, .topnav a:hover::after{
     content: "";
     width: 30%;
     height: 2px;
@@ -108,13 +99,148 @@ body, html {
     position: absolute;
     bottom: -4px;
     left: 20px;
+} */
+
+#Product1 h1{
+    color: rgb(162, 120, 36);
+    text-align: center;
+    padding-top: 40px;
+}
+
+#Product1{
+    text-align: center;
+}
+
+#Product1 .procontainer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#Product1 .pro{
+    width: 20%;
+    min-width: 165px;
+    padding: 10px 12px;
+    border: 1px solid darkgoldenrod;
+    background-color: rgb(56, 56, 55);
+    border-radius: 25px;
+    border-width: 1px;
+    cursor: pointer;
+    margin: 15px 10px;
+    position: relative;
+}
+#Product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#Product1 .pro .description{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#Product1 .pro .description h5{
+    color: white;
+    padding-top: 7px;
+    font-size: 14px;
+}
+#Product1 .pro .description i{
+    font-size: 12px;
+    color: gold;
+}
+#Product1 .pro .description h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: cornsilk;
+}
+
+#cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    color: rgb(252, 224, 86);
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#hr0{
+    margin-top: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hotdeals{
+    text-align: center;
+}
+
+.hotdeals .hotcont{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.hotdeals .hotdimg{
+    width: 20%;
+    min-width: 165px;
+    padding: 10px 12px;
+    border: 1px solid darkgoldenrod;
+    background-color: rgb(56, 56, 55);
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px 10px;
+    position: relative;
+}
+.hotdeals .hotdimg img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.hotdeals .hotdimg .desc{
+    text-align: start;
+    padding: 10px 0;
+}
+
+.hotdeals .hotdimg .desc h5{
+    color: white;
+    padding-top: 7px;
+    font-size: 14px;
+}
+.hotdeals .hotdimg .desc i{
+    font-size: 12px;
+    color: gold;
+}
+.hotdeals .hotdimg .desc h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: cornsilk;
+}
+#cart1{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    color: rgb(252, 224, 86);
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#hr{
+    margin-top: 80px;
 }
 
 .brandprod h1{
     font-family: "Sofia", sans-serif;
     font-weight: lighter;
-    font-size: 60px;
-    color: rgb(245, 242, 133);
+    font-size: 40px;
+    color: rgb(188, 152, 52);
     padding-top: 5px;
     padding-bottom: 20px;
     text-align: center;

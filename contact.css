@@ -74,50 +74,34 @@ body, html {
     right: 10px;
 }
 
-#return{
-    color: burlywood;
-}
 
-#return .policy h1{
-    text-align: center;
-    color: rgb(226, 175, 97);
-    font-size: 35px;
-}
-
-#return .returncont{
-    font-size: 18px;
-}
-
-#return .policyimg img{
-    height: 80px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#return .cancel{
-    margin-bottom: 80px;
-}
 
 .contactform{
-    color: gold;
-    position: relative;
-    top: 50px;
+    color: rgb(212, 163, 88);
     padding-left: 10px;
 }
 
 .Contact{
-    color: rgb(223, 188, 136);
-    
+    color: rgb(248, 210, 122);
+    display: flex;
+    /* text-align: center; */
+    justify-content: space-between;
+}
+
+
+
+.map{
+    margin-top: 150px;
+    margin-right: 30px;
 }
 
 .formelements{
-    position: relative;
+    /* position: relative; */
     top: 50px;
 }
 
 .formelements input{
-    background-color: rgb(170, 161, 150);
+    background-color: rgb(215, 210, 205);
     padding: 8px;
     border-radius: 7px;
     margin: 20px;
@@ -127,42 +111,37 @@ body, html {
 }
 
 .formelements textarea{
-    background-color: rgb(170, 161, 150);;
+    background-color: rgb(215, 210, 205);
     border-radius: 7px;
     width: 40%;
-    margin: 20px;
+    margin: 10px 20px 5px;
 }
 
 .formelements button{
-    background-color: gold;
+    background-color: #d9be2d;
     border-radius: 5px;
     padding: 7px;
-    margin: 20px;
-}
-  
-.seecontact{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-}
-.contactcontent{
-    position: relative;
-    top: -500px;
-    left: 170px;
+    margin: 10px 20px;
 }
 
-.location{
-    position: relative;
-    top: -200px;
-    left: -50px;
+
+
+.Contact1{
+    color: rgb(248, 210, 122);
+    margin-top: 30px;
+}
+.seecontact{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
 
 .contactcontent a{
-    color: blanchedalmond;
+    color: rgb(248, 210, 122);
     text-decoration: none;
 }
 
-.contactcontent a :hover{
+.contactcontent a:hover{
     color: burlywood;
 }
 
