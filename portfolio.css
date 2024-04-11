@@ -18,8 +18,10 @@ body, html {
     margin: 0px 0px;
     padding: 0px 40px;
     background: #242428;
-    
-    
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 #header img{
@@ -81,7 +83,7 @@ body, html {
 }
 
 #main #head{
-    color: rgb(234, 209, 67);
+    color: darkgoldenrod;
     font-size: 50px;
     font-family: "Sofia", sans-serif;
     text-align: center;

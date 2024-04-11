@@ -12,13 +12,17 @@ body, html {
     padding: 0;
 }
 
-#header{
+#header{ 
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0px 0px;
     padding: 0px 40px;
     background: #242428;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
     
 }
 
