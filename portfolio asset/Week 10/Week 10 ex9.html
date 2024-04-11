@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9</title>
+</head>
+<body>
+    <script>
+
+        function arraySum(num)
+        {
+            var sum = 0;
+            for(var i = 0; i<num.length; i++)
+            {
+                sum += num[i];
+            }
+            return sum;
+        }
+
+        function arrayProduct(num)
+        {
+            var prod = 1;
+            for(var i = 0; i<num.length; i++)
+            {
+                prod *= num[i];
+            }
+            return prod;
+        }
+        const Integers = [12,14,16,18];
+        const sum = arraySum(Integers);
+        document.write('Sum:' + sum + "<br>");
+
+        const product = arrayProduct(Integers);
+        document.write('Product: '+ product);
+    </script>
+</body>
+</html>

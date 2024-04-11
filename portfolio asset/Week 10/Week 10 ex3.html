@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 3</title>
+</head>
+<body>
+    <script>
+        var maths = parseInt(prompt("Mathematics: "));
+        var science = parseInt(prompt("Science:"));
+        var english = parseInt(prompt("English:"));
+        var EVS = parseInt(prompt("EVS:"));
+        var Social = parseInt(prompt("Social:"));
+        var total = ((maths+science+english+EVS+Social)/500)*100;
+        if(total>=80 && total<=100){
+            document.write("Distinction");
+        }
+        else if(total>=60 && total<80){
+            document.write("First Division");
+        }
+        else if(total>=50 && total<60){
+            document.write("Second Division");
+        }
+        else if(total>=40 && total<50){
+            document.write("Third Division");
+        }
+        else {
+            document.write("Fail");
+        }
+    </script>
+</body>
+</html>

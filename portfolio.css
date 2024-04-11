@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
 body{
     background-image: linear-gradient(to right, #0f1111, #1f1f1f, #1d1f1f, #0f1111);
 }
@@ -63,87 +68,61 @@ body, html {
     left: 20px;
 }
 
-#cart{
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50px;
-    color: burlywood;
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
-}
-
-
-
-.contactform{
-    color: rgb(212, 163, 88);
-    padding-left: 10px;
-}
-
-.Contact{
-    color: rgb(232, 175, 43);
-    display: flex;
-    /* text-align: center; */
-    justify-content: space-between;
-}
-
-
-
-.map{
-    margin-top: 150px;
-    margin-right: 30px;
-}
-
-.formelements{
-    /* position: relative; */
-    top: 50px;
-}
-
-.formelements input{
-    background-color: rgb(215, 210, 205);
-    padding: 8px;
-    border-radius: 7px;
-    margin: 20px;
-}
-::placeholder{
-    color: black;
-}
-
-.formelements textarea{
-    background-color: rgb(215, 210, 205);
-    border-radius: 7px;
-    width: 40%;
-    margin: 10px 20px 5px;
-}
-
-.formelements button{
-    background-color: #d9be2d;
-    border-radius: 5px;
-    padding: 7px;
-    margin: 10px 20px;
-}
-
-
-
-.Contact1{
-    color: rgb(248, 210, 122);
+.wireframes{
     margin-top: 30px;
 }
-.seecontact{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+
+.wireframes a{
+    color: rgb(208, 183, 55);
 }
 
-.contactcontent a{
-    color: rgb(248, 210, 122);
+.wireframes a:hover{
+    color: goldenrod;
+}
+
+#main #head{
+    color: rgb(234, 209, 67);
+    font-size: 50px;
+    font-family: "Sofia", sans-serif;
+    text-align: center;
+}
+
+#line {
+    color: burlywood;
+}
+
+#main .week1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+}
+
+.weekimg a{
     text-decoration: none;
 }
 
-.contactcontent a:hover{
-    color: burlywood;
+.weekimg .desc a:visited{
+    color: darkgoldenrod;
 }
+
+.weekimg a p{
+    color: rgb(239, 209, 132);
+    font-size: 16px;
+    text-align: center;
+}
+
+.weekimg a p:hover{
+    color: darkgoldenrod;
+
+}
+
+.weekimg img{
+    width: 150px;
+    height: 150px;
+}
+
+
 
 
 footer {
@@ -170,13 +149,12 @@ footer {
 .footpanel2 {
     background-color: #292b2c;
     color: rgb(235, 205, 167);
-    font-size: 1.2rem;
+    font-size: 1rem;
     height: 300px;
     display: flex;
     justify-content: space-evenly;
 
 }
-
 
 ul {
     margin-top: 20px;

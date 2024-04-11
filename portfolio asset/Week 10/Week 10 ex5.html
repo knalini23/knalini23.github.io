@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 5</title>
+</head>
+<body>
+    <div id="imageContainer"></div>
+    <script>
+        function displayImages()
+        {
+            var container = document.getElementById("imageContainer")
+
+            for(var i = 0; i<=4; i++){
+                var img = document.createElement("img");
+
+                img.src = i + '.jpg';
+    
+                container.appendChild(img);
+            }
+        }
+
+        displayImages();
+    </script>
+</body>
+</html>

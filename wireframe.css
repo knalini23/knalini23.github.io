@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
 body{
     background-image: linear-gradient(to right, #0f1111, #1f1f1f, #1d1f1f, #0f1111);
 }
@@ -63,88 +68,29 @@ body, html {
     left: 20px;
 }
 
-#cart{
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50px;
-    color: burlywood;
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
-}
-
-
-
-.contactform{
-    color: rgb(212, 163, 88);
-    padding-left: 10px;
-}
-
-.Contact{
-    color: rgb(232, 175, 43);
-    display: flex;
-    /* text-align: center; */
-    justify-content: space-between;
-}
-
-
-
-.map{
-    margin-top: 150px;
-    margin-right: 30px;
-}
-
-.formelements{
-    /* position: relative; */
-    top: 50px;
-}
-
-.formelements input{
-    background-color: rgb(215, 210, 205);
-    padding: 8px;
-    border-radius: 7px;
-    margin: 20px;
-}
-::placeholder{
-    color: black;
-}
-
-.formelements textarea{
-    background-color: rgb(215, 210, 205);
-    border-radius: 7px;
-    width: 40%;
-    margin: 10px 20px 5px;
-}
-
-.formelements button{
-    background-color: #d9be2d;
-    border-radius: 5px;
-    padding: 7px;
-    margin: 10px 20px;
-}
-
-
-
-.Contact1{
-    color: rgb(248, 210, 122);
+.portfolio{
     margin-top: 30px;
+    margin-bottom: 50px;
 }
-.seecontact{
+
+.portfolio a{
+    color: rgb(208, 183, 55);
+}
+
+.portfolio a:hover{
+    color: darkgoldenrod;
+}
+
+#frames{
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-evenly;
+    flex-wrap: nowrap;
 }
 
-.contactcontent a{
-    color: rgb(248, 210, 122);
-    text-decoration: none;
+#frames .frameimg img{
+    width: 250px;
+    height: 350px;
 }
-
-.contactcontent a:hover{
-    color: burlywood;
-}
-
 
 footer {
     margin-top: 15px;
@@ -170,13 +116,12 @@ footer {
 .footpanel2 {
     background-color: #292b2c;
     color: rgb(235, 205, 167);
-    font-size: 1.2rem;
+    font-size: 1rem;
     height: 300px;
     display: flex;
     justify-content: space-evenly;
 
 }
-
 
 ul {
     margin-top: 20px;

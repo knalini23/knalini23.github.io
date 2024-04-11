@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 11</title>
+</head>
+<body>
+
+    <input type="text" id="addItemInput">
+    <button onclick="addItem()">Add</button>
+
+    <button onclick="displayItems()">Display</button>
+
+    <div id="displayArea"></div>
+
+    <script>
+
+        let itemsArray = [];
+
+        function addItem(item) 
+        {
+            let inputBox = document.getElementById("addItemInput");
+            let newItem = inputBox.value.trim(); 
+            if (newItem !== "") {
+              itemsArray.push(newItem);
+              inputBox.value = ""; 
+            }
+        }     
+
+        function displayItems() 
+        {
+            let displayArea = document.getElementById("displayArea");
+            displayArea.innerHTML = ""; 
+
+            if (itemsArray.length === 0) {
+              displayArea.textContent = "The array is empty.";
+            } else {
+              let list = document.createElement("ul");
+              itemsArray.forEach(item => {
+                let listItem = document.createElement("li");
+                listItem.textContent = item;
+                list.appendChild(listItem);
+              });
+              displayArea.appendChild(list);
+            }
+        }
+    </script>
+
+</body>
+</html>

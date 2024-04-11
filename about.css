@@ -17,6 +17,17 @@ body, html {
     
 }
 
+.herosec {
+    background-image: url("banners/aboutbanner.png");
+    background-size: cover;
+    height: 250px;
+    width: 1250px;
+    margin-left: px;
+    margin-right: 20px;
+    background-position: top 40% right 0;
+    padding: 0 6px;
+}
+
 #header img{
         margin-right: auto;
         padding-bottom: 10px;
@@ -75,7 +86,7 @@ body, html {
 }
 
 .about{
-    color: burlywood;
+    color: rgb(227, 147, 42);
     margin-top: 30px;
 }
 

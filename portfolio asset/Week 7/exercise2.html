@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h3><b>HTML Form Test</b></h3>
+    <form action="form_process.html" method="post">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="Name"></td>
+        </tr>
+        <tr>
+            <td>Address </td>
+            <td><input type="text" name="Adress"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="E-mail"></td>
+        </tr>
+        <tr>
+            <td>Gender </td>
+            <td>
+                <input type="radio" name="Gender" value="m">Male
+                <input type="radio" name="Gender" value="f">Female
+            </td>
+        </tr>
+        <tr>
+            <td>Hobbies</td>
+            <td>
+                <input type="checkbox" name = "hobbies">Sports
+                <input type="checkbox" name = "hobbies">Movies
+                <input type="checkbox" name = "hobbies">Travelling
+            </td>
+        </tr>
+
+        <tr>
+            <td>Country</td>
+            <td><select style="width: 200px;" name="country">
+                <option value="Nepal">Nepal</option>
+                <option value="India">India</option>
+                <option value="US">USA</option>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Message</td>
+            <td><textarea name="myText"  cols="40" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button>Submit</button> 
+                <button>Reset</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
