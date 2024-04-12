@@ -3,11 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 7</title>
+    <title>Colored Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            margin: 12px auto;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: center;
+        }
+
+
+        /* Color for heading row */
+        .heading-row th{
+            background-color: #207bb4;
+        }
+
+        /* Color for rows 1 and 3 */
+        .odd-row {
+            background-color: #abd9ef;
+        }
+
+        /* Color for rows 2 and 4 */
+        .even-row {
+            background-color: #68bcf8;
+        }
+    </style>
 </head>
 <body>
+    <table id="myTable">
+        <thead>
+            <tr class="heading-row">
+                <th>S.N</th>
+                <th>Name</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table body will be created dynamically -->
+        </tbody>
+    </table>
+
     <script>
-        
+        // JavaScript code to dynamically create the table rows with different colors
+        document.addEventListener("DOMContentLoaded", function() {
+            var tableBody = document.querySelector("#myTable tbody");
+
+            // Define the data for the table rows
+            var rowData = [
+                ["1", " Name 1", "1.jpg"],
+                ["2", " Name 2", "2.jpg"],
+                ["3", " Name 3", "3.jpg"],
+                ["4", " Name 4", "4.jpg"]
+            ];
+
+            // Loop through the data and create table rows
+            for (var i = 0; i < rowData.length; i++) {
+                var row = document.createElement("tr");
+
+                // Apply different classes for different rows
+                if (i === 0) {
+                    row.classList.add("heading-row");
+                } else if (i === 1 || i === 3) {
+                    row.classList.add("even-row");
+                } else {
+                    row.classList.add("odd-row");
+                }
+
+                // Create table cells and append them to the row
+                for (var j = 0; j < rowData[i].length; j++) {
+                    var cell = document.createElement("td");
+                    cell.textContent = rowData[i][j];
+                    row.appendChild(cell);
+                }
+
+                // Append the row to the table body
+                tableBody.appendChild(row);
+            }
+        });
     </script>
 </body>
 </html>

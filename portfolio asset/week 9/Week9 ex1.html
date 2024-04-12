@@ -7,9 +7,11 @@
 </head>
 <style>
     div.container
-    {
-        border: 10px;
+    { 
+        width:405px;
+        height: 234px;
     }
+
     div.heading p
     {
         display: inline-block;
@@ -22,21 +24,34 @@
         top: 0px;
     }
 
+    #head1{
+        border: 3px solid rgb(225, 235, 32);
+        padding: 5px 85px 5px 16px;
+        left: 2px;
+    }
+
     #head2
     {
-        left: 140px;
+        border: 3px solid rgb(225, 235, 32);
+        padding: 5px 20px 5px 13px;
+        left: 18px;
     }
 
     #head3
     {
-        left: 170px;
+        border: 3px solid rgb(225, 235, 32);
+        padding: 5px 10px 5px 15px;
+        left: 15px;
     }
     div.blue1
     {
         width: 200px;
         height: 200px;
         background-color: rgb(100, 148, 226);
-        border-style: none;
+        border: 3px solid rgb(225, 235, 32);
+        
+        /* border-style: ();  */
+        
         position: relative;
         left: 0%;
         top: 0px;
@@ -49,10 +64,10 @@
         width: 100px;
         height: 50px;
         background-color: yellow;
-        border-style: none;
+        border: 3px solid rgb(225, 235, 32);
         position: relative;
         left: 200px;
-        top: -200px;
+        top: -205px;
     }
 
     div.red1
@@ -61,10 +76,11 @@
         width: 100px;
         height: 40px;
         background-color: red;
-        border-style: none;
+        border: 3px solid rgb(225, 235, 32);
+        /* border-style: none; */
         position: relative;
         left: 305px;
-        top: -250px;
+        top: -260px;
     }
 
     div.green1
@@ -72,49 +88,52 @@
         width: 205px;
         height: 163px;
         background-color: green;
-        border-style: none;
+        
+        border: 3px solid rgb(225, 235, 32);
         position: relative;
         left: 200px;
         top: -270px;
     }
+ 
 </style>
+   
 <body>
     <div class="container">
-    <div class="heading">
-        <p id="head1">Column 1 </p>
-        <p id="head2">Column 2</p>
-        <p id="head3">Column 3</p>
-    </div>
+        <div class="heading">
+            <p id="head1">Column 1 </p>
+            <p id="head2">Column 2</p>
+            <p id="head3">Column 3</p>
+        </div>
 
-    <div class="blue1">
-        <p>A numbered list:</p>
-        <ol>
-            <li>Able</li>
-            <li>Baker</li>
-            <li>Charlie</li>
-            <li>Delta</li>
-            <li>Echo</li>
-        </ol>
-    </div>
+        <div class="blue1">
+            <p>A numbered list:</p>
+            <ol>
+                <li>Able</li>
+                <li>Baker</li>
+                <li>Charlie</li>
+                <li>Delta</li>
+                <li>Echo</li>
+            </ol>
+        </div>
 
-    <div class="yellow1">
-        B
-    </div>
+        <div class="yellow1">
+            B
+        </div>
 
-    <div class="red1">
-        C
-    </div>
+        <div class="red1">
+            C
+        </div>
 
-    <div class="green1">
-        <p>An unnumbered list:</p>
-        <ul>
-            <li>Pounds</li>
-            <li>Dollars</li>
-            <li>Euro</li>
-            <li>Yen</li>
-            <li>Roubles</li>
-        </ul>
+        <div class="green1">
+            <p>An unnumbered list:</p>
+            <ul>
+                <li>Pounds</li>
+                <li>Dollars</li>
+                <li>Euro</li>
+                <li>Yen</li>
+                <li>Roubles</li>
+            </ul>
+        </div>
     </div>
-</div>
 </body>
 </html>

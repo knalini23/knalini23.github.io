@@ -104,7 +104,7 @@ body, html {
 }
 
 #audiosol .audiopara{
-    color: burlywood;
+    color: goldenrod;
     margin-top: 40px;
     text-align: center;
     margin-right: 20px;
@@ -129,14 +129,14 @@ body, html {
 }
 
 #servcentre .servhead h1{
-    color: blanchedalmond;
+    color: rgb(181, 143, 46);
     margin-top: 70px;
     margin-bottom: 40px;
 }
 
 .servcont{
     text-align: center;
-    color: burlywood;
+    color: rgb(167, 134, 52);
     margin-top: 40px;
 }
 
@@ -161,20 +161,19 @@ footer {
 }
 
 .footpanel1 a:hover{
-    color: blanchedalmond;
+    color: rgb(230, 199, 120);
     transition: 0.3s;
 }
 
 .footpanel2 {
     background-color: #292b2c;
-    color: rgb(235, 205, 167);
+    color: darkgoldenrod;
     font-size: 1rem;
     height: 300px;
     display: flex;
     justify-content: space-evenly;
 
 }
-
 
 ul {
     margin-top: 20px;
@@ -183,14 +182,14 @@ ul a {
     display: block;
     font-size: 0.95rem;
     margin-top: 10px;
-    color: rgb(197, 169, 132);
+    color: rgb(195, 150, 37);
     text-decoration: none;
     
 }
 
 .footpanel3{
     background-color: #28282d;
-    color: burlywood;
+    color: rgb(205, 154, 24);
     font-size: 1.5rem;
     border-top: 0.5px solid white;
     height: 70px;
@@ -214,7 +213,7 @@ ul a {
 
 .footpanel4 {
     background-color: #28282d;
-    color: burlywood;
+    color: rgb(198, 152, 37);
     height: 80px;
     font-size: 0.7rem;
     text-align: center;

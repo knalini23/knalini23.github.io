@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NoteNexon > Contact</title>
+    <title>NoteNexus > Contact</title>
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        function validate() 
+        {
+            var username = document.getElementById('firstname').value;
+            var subject = document.getElementById('email').value;
+            var message = document.getElementById('contactnumber').value;
+            var message = document.getElementById('Message').value;
+            if (firstname.trim() === '' || email.trim() === '' || contactnumber.trim() === '' || message.trim() === '') {
+                alert('Please fill in all fields.');
+                return false; // Prevent form submission
+            }
+
+            alert("Contact info sent!");
+            return true; // Proceed with form submission
+        }
+    </script>
+
 </head>
 <body>
-    <header>
-        <a id="top"></a>
+    <a id="top"></a>
         <section id="header">
             <a href="#"><img src="NoteNexon.png" alt=""></a>
     
@@ -25,7 +42,6 @@
                 </ul>
             </div>
         </section>
-    </header>
 
 
     <header class="Contact">
@@ -36,11 +52,11 @@
             
             <hr>
             <div class="formelements">
-                <form action="form.html" method="post">
-                    <input type="text" name="firstname" id="firstname"   placeholder="First Name*">
-                    <input type="text" name="lastname" id="lastname"      placeholder="Last Name*"> <br>
-                    <input type="email" name="email" id="email"         placeholder="Enter your Email Adrress*"><br>
-                    <input type="number" name="Contact number"      id="contactnumber" placeholder="Contact Number*"> <br>
+                <form action="form.html" method="get" onsubmit="return validate()">
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name*">
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name"> <br>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email Adrress*"><br>
+                    <input type="tel" name="Contact number" id="contactnumber" placeholder="Contact Number*"> <br>
                     <textarea name="text" cols="100" rows="10"  id="Message" placeholder="Message*"></textarea><br>
                     <button type="submit" name="Send" id="Send">Send</button>
                 </form>
@@ -65,13 +81,13 @@
             <div class="contactcontent">
                 <p><i class="fa-solid fa-phone"> </i>+977 8734562054</p>
                 <p><i class="fa-solid fa-phone"> </i>+977 9364756102</p>
-                <p><i class="fa-solid fa-envelope"></i><a href="mailto:    help@notenexon.com">help@notenexon.com</a></p>
+                <p><i class="fa-solid fa-envelope"></i><a href="mailto:    help@NoteNexus.com">help@NoteNexus.com</a></p>
             </div>
                 
             
                 <div class="location">
                     <div><b><i class="fa fa-map-marker" aria-hidden="true"></i>Registered Office</b></div>
-                    <p>NoteNexon Private Limited Nexon Building, Unit-6,</p>   
+                    <p>NoteNexus Private Limited Nexon Building, Unit-6,</p>   
                     <p>Customer help at #rd Floor, Anamnagar - 09875</p>
                 </div>
         </div>
@@ -92,7 +108,7 @@
                     <p>Call our Sales Expert.</p>
                     <i class="fa-solid fa-phone"> +977 8734562054</i>
                 </div>
-                <p>Experience NoteNexon App on mobile</p>
+                <p>Experience NoteNexus App on mobile</p>
                 <div class="logoplaystore">
                     <img src="googleplay.png" alt="unexpected image error">
                     <img src="applestore.png" alt="unexpected image error">
@@ -105,8 +121,8 @@
                 <a href="About.html">About Us</a>
                 <a href="terms">Terms of use</a>
                 <a href="service">Service Centre</a>
-                <a href="rewards">NoteNexon Rewards Program</a> 
-                <a href="Store">NoteNexon Music Store</a>
+                <a href="rewards">NoteNexus Rewards Program</a> 
+                <a href="Store">NoteNexus Music Store</a>
                 <a href="policy">Privacy Policy</a>
 
             </ul>
@@ -117,7 +133,7 @@
                 <a href="Contact.html">Contact Us</a>
                 <a href="FAQs">Frequently Asked Questions</a>
                 <a href="Warranty">Standard and Premium Warranty Plans</a>
-                <a href="Payment">NoteNexon Payment Options</a>
+                <a href="Payment">NoteNexus Payment Options</a>
             </ul>
             <ul>
                 <p>Secure Checkout</p>
@@ -139,7 +155,7 @@
                 <a>Your Ads Privacy Choices</a>
             </div>
             <div class="copyright">
-                &copy 1996-2024, NoteNexon, Inc. or its affiliates
+                &copy 1996-2024, NoteNexus, Inc. or its affiliates
             </div>
         </div>
     </footer>
