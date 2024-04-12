@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(230, 237, 214);
+        }
+        .head {
+            width: 100%;
+            height: 84px;
+        }
+        .header {
+            background-color: rgb(197, 214, 166);
+            float: right;
+        }
+        .img1 {
+            float: left;
+        }
+        .section {
+            background-color: rgb(203, 191, 191);
+            overflow: hidden; /* Clear floats */
+        }
+        .leftColumn {
+            text-align: center;
+            float: left;
+            width: 50%;
+        }
+        .rightColumn {
+            text-align: center;
+            float: right;
+            width: 50%;
+        }
+        fieldset {
+            border: 2px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        article {
+            margin-bottom: 20px;
+        }
+        article img {
+            float: left; /* Make the image float left */
+            margin-right: 10px; /* Add some space between the image and text */
+        }
+        article p {
+            text-align: justify;
+            text-align-last: right; /* Align text to the right */
+        }
+        .footer {
+            background-color: #f5e3bf;
+            text-align: center;
+        }
+        .articles-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .article {
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <img src="cocacola.jpg" class="img1" width="100">
+        <div class="header">
+            <input type="button" value="Home">
+            <input type="button" value="About Us">
+            <input type="button" value="Services">
+            <input type="button" value="Who We Work With">
+            <input type="button" value="Contact">
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Who We Work With</h3>
+        <div class="leftColumn">
+            <fieldset>
+                <article>
+                    <img src="cocacola.jpg" width="50">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos eaque delectus eius vel repellat explicabo, rem maxime quod molestiae possimus vitae nihil. Voluptatum, sequi illum sapiente labore excepturi sunt ullam?</p>
+                </article>
+            </fieldset>
+           
+            <fieldset>
+                <article>
+                    <img src="cocacola.jpg" width="50">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos eaque delectus eius vel repellat explicabo, rem maxime quod molestiae possimus vitae nihil. Voluptatum, sequi illum sapiente labore excepturi sunt ullam?</p>
+                </article>
+            </fieldset>
+        </div>
+
+        <div class="rightColumn">
+            <fieldset>
+                <article>
+                    <img src="cocacola.jpg" width="50">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos eaque delectus eius vel repellat explicabo, rem maxime quod molestiae possimus vitae nihil. Voluptatum, sequi illum sapiente labore excepturi sunt ullam?</p>
+                </article>
+            </fieldset>
+           
+            <fieldset>
+                <article>
+                    <img src="cocacola.jpg" width="50">
+                   
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos eaque delectus eius vel repellat explicabo, rem maxime quod molestiae possimus vitae nihil. Voluptatum, sequi illum sapiente labore excepturi sunt ullam?</p>
+                </article>
+            </fieldset>
+        </div>
+       
+    </div>
+
+    <div class="articles-container">
+        <div class="article">
+            <h5>Site map</h5>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Who We Work With</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <div class="article">
+            <h5>Client Testmaterials</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero modi similique accusamus commodi perspiciatis inventore alias nesciunt nam dolorum, magni voluptates porro nisi temporibus quibusdam non deleniti? Nesciunt, corrupti suscipit.</p>
+        </div>
+
+        <div class="article">
+            <h5>Google map</h5>
+            <p>Where are we?</p>
+            <p>Mob No: 9819965626</p>
+            <p>Info@stevejobs</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright © 2000 SteveJobscocacola</p>
+        <a href="www.stevejobsCocacola.com">stevejobsCocacola.com</a>
+    </div>
+   
+</body>
+</html>
